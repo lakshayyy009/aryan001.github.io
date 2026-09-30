@@ -1,21 +1,196 @@
-/*
-       APNA WHATSAPP NUMBER YAHAN LIKHNA
-       Example:
-       let whatsapp = "919876543210";
+<div class="stats">
+
+        <div class="card">
+            <h3>Instagram</h3>
+            <p>Official Profile</p>
+        </div>
+
+        <div class="card">
+            <h3>Posts</h3>
+            <p>Photo Gallery</p>
+        </div>
+
+        <div class="card">
+            <h3>24/7</h3>
+            <p>Contact</p>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- POSTS -->
+<section id="posts">
+
+    <h2 class="title">
+        My Posts
+    </h2>
+
+    <p class="sub">
+        Instagram Photo Gallery
+    </p>
+
+    <div class="posts">
+
+        <div class="post">
+            <span>POST 01</span>
+        </div>
+
+        <div class="post">
+            <span>POST 02</span>
+        </div>
+
+        <div class="post">
+            <span>POST 03</span>
+        </div>
+
+        <div class="post">
+            <span>POST 04</span>
+        </div>
+
+        <div class="post">
+            <span>POST 05</span>
+        </div>
+
+        <div class="post">
+            <span>POST 06</span>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- WEBSITE SERVICE -->
+<section id="website">
+
+    <div class="service">
+
+        <h2>
+            Apni Website Banwao 🚀
+        </h2>
+
+        <p>
+            Instagram profile, business, portfolio ya
+            personal brand ke liye modern animated
+            website chahiye?
+            Humse website create karwao.
+        </p>
+
+        <div class="buttons">
+
+            <a
+                class="btn primary"
+                href="#contact">
+                Create My Website
+            </a>
+
+            <a
+                class="btn"
+                href="https://www.instagram.com/aryankashyap__09/"
+                target="_blank">
+                💬 DM For Website
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- CONTACT -->
+<section id="contact">
+
+    <h2 class="title">
+        Contact Me
+    </h2>
+
+    <p class="sub">
+        Website banwane ke liye enquiry bhejo
+    </p>
+
+    <div class="contact">
+
+        <form onsubmit="sendMessage(event)">
+
+            <input
+                id="name"
+                type="text"
+                placeholder="Your Name"
+                required>
+
+            <input
+                id="phone"
+                type="tel"
+                placeholder="Your Phone Number"
+                required>
+
+            <textarea
+                id="message"
+                placeholder="Aapko kaisi website chahiye?"
+                required></textarea>
+
+            <button type="submit">
+                🚀 Send Enquiry
+            </button>
+
+        </form>
+
+    </div>
+
+</section>
+
+
+<!-- FOOTER -->
+<footer>
+
+    © 2026
+    <strong>Aryan Kashyap</strong>
+    • @aryankashyap__09
+
+</footer>
+
+
+<script>
+
+function sendMessage(event){
+
+    event.preventDefault();
+
+    var name =
+        document.getElementById("name").value;
+
+    var phone =
+        document.getElementById("phone").value;
+
+    var message =
+        document.getElementById("message").value;
+
+    /*
+      IMPORTANT:
+      Neeche 919999999999 ko
+      Aryan ke REAL WhatsApp number se replace karna.
     */
 
-    let whatsapp = "919999999999";
+    var whatsappNumber =
+        "919999999999";
 
-    let text =
+    var text =
         "Hello Aryan Kashyap!%0A%0A" +
-        "Name: " + encodeURIComponent(name) +
-        "%0APhone: " + encodeURIComponent(phone) +
+        "Name: " +
+        encodeURIComponent(name) +
+        "%0APhone: " +
+        encodeURIComponent(phone) +
         "%0AWebsite Requirement: " +
         encodeURIComponent(message);
 
     window.open(
-        "https://wa.me/" + whatsapp +
-        "?text=" + text,
+        "https://wa.me/" +
+        whatsappNumber +
+        "?text=" +
+        text,
         "_blank"
     );
 }
